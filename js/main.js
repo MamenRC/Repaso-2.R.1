@@ -47,3 +47,51 @@ function totalaverage(){
 }
 alert(totalaverage());
 //Adalaber más joven
+var ages = [first, second, third, fourth, fifth];
+var one = (adalabers[0].name);
+var two = (adalabers[1].name);
+var three = (adalabers[2].name);
+var four = (adalabers[3].name);
+var five = (adalabers[4].name);
+function youngest(){
+if (first < second && first < third && first < fourth && first < fifth){
+	return(one);
+} else if (second < first && second < third && second < fourth && second < fifth){
+	return(two);
+} else if (third < first && third < second && third < fourth && third < fifth){
+	return(three);
+} else if (fourth < first && fourth < third && fourth < second && fourth < fifth){
+	return(four);
+} else if (fifth < first && fifth < third && fifth < fourth && fifth < second){
+	return(five);
+} else {
+	return("Qué paxó?")
+}
+}
+alert(youngest()); //Intentar usar Math.min()
+
+//Adalabers que son diseñadoras
+var job1 = (adalabers[0].job);
+var job2 = (adalabers[1].job);
+var job3 = (adalabers[2].job);
+var job4 = (adalabers[3].job);
+var job5 = (adalabers[4].job);
+var jobs = [job1, job2, job3, job4, job5]
+function designers(){
+	for (var i = 0; i < length - 1; i++){
+	if (job1 == "Diseñadora"){
+		return(one);
+	}else if (job2 == "Diseñadora"){
+		return(two);
+	} else if (job3 == "Diseñadora"){
+		return(three);
+	}else if (job4 == "Diseñadora"){
+		return(four);
+	}else if (job5 == "Diseñadora"){
+		return(five);
+	}else{
+		return("No designers")
+	}
+}
+}
+alert(designers()); //Algo me falla
